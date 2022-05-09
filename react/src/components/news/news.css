@@ -1,0 +1,123 @@
+.classCardStyle {
+  display: flex;
+  width: 40vw;
+  align-items: right;
+  background-color:#FCFCFB;
+  border-color:#FCFCFB;
+  box-shadow:none;
+  font-family: "Open Sans";
+  box-shadow: inherit !important;
+  margin-top:0;
+}
+h1{
+  font-size: 20px!important;
+}
+
+.classCardTitleStyle {
+  display: flex;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 35px;
+  text-align: right;
+  margin:10px;
+  margin-top: 10px;
+  color: #7A7A7A;
+}
+.textbox{
+  float: left;
+  margin-right: 20px;
+}
+a {
+  color: rgb(255, 255, 255);
+}
+.btn-learn-more{
+	border: none;
+	border-radius: 10px;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-left: 500px;
+    color: #FCFCFB;
+  background-color: #A78EC3;
+}
+
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  padding: 10px;
+  background: #ffffff;
+  
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 25px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  border-color: white;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  width: 100%;
+  padding: 10px 15px;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  color: #7A7A7A;
+  transition: background 0.1s, color 0.1s;
+}
+
+.label:hover {
+  background: #d8d8d8;
+}
+
+.label:active {
+  background: #ccc;
+}
+h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.input:checked + .label {
+  background: #fff;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color:#A78EC3 ;
+  text-underline-position: under;
+
+
+}
+
+@media (min-width: 600px) {
+  .label {
+    width: auto;
+  }
+}
+.panel {
+  display: none;
+  padding: 20px 30px 30px;
+  background: #fff;
+}
+
+@media (min-width: 600px) {
+  .panel {
+    order: 99;
+  }
+}
+
+.input:checked + .label + .panel {
+  display: block;
+}
