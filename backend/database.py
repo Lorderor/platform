@@ -21,7 +21,7 @@ cors = CORS(app)
 db_name = "test"
 db_user = "georgiy"
 password = "Qwerty123"
-DB_URI = "mongodb+srv://{}:{}@cluster0.traba.mongodb.net/{}?retryWrites=true&w=majority".format(db_user, password, db_name)
+DB_URI = "mongodb://localhost:27017/projectdb"
 app.config["MONGODB_HOST"] = DB_URI	
 app.config['CORS_HEADERS'] = 'Content-Type'
 
