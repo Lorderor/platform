@@ -236,9 +236,9 @@ def db_update_course_instructor():
 def db_delete_single_course():
     return CourseObj(request.json).db_delete_single_course()
 
-@app.route('/api/get_all_courses', methods=['GET'])
+@app.route('/api/db_get_all_courses', methods=['GET'])
 def db_get_all_courses():
-    return CourseObj(request.json).db_get_all_courses()
+    return CourseObj('').db_get_all_courses()
 
 # Sends a message from a user to another
 @app.route('/api/db_send_message', methods=['POST'])

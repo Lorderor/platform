@@ -207,4 +207,6 @@ class CourseObj():
 
 		for course in self.Course.objects():
 			courses.append(course)
+
+		print('kek')
 		return make_response(jsonify(courses), 200)

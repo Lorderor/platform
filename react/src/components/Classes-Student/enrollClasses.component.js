@@ -33,7 +33,7 @@ class AllClassList extends Component {
     };
 
     componentDidMount() {
-        axios.get(`http://127.0.0.1:8103/api/get_all_courses`)
+        axios.get(`http://127.0.0.1:8103/api/db_get_all_courses`)
             .then(res => {
                 const courses = res.data;
                 this.setState({ courses });
