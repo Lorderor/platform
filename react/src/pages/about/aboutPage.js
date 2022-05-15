@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import About from "../../components/about/about.js";
 import styled from "styled-components";
-import OutsideNavbar from "../../components/navbar/outsideNavbar.js";
+import OutsideNavbar from "../../components/auth/navbar/OutsideNavbar.jsx";
 
 class AboutPage extends Component {
   render() {

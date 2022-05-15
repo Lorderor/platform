@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Solution from "../../components/solutions/solutions.js";
 import styled from "styled-components";
-import OutsideNavbar from "../../components/navbar/outsideNavbar.js";
+import OutsideNavbar from "../../components/auth/navbar/OutsideNavbar.jsx";
 
 class SolutionsPage extends Component {
   render() {

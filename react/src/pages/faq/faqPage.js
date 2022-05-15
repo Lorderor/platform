@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FAQ from "../../components/faq/faq.js";
 import "./faqPage.css";
-import OutsideNavbar from "../../components/navbar/outsideNavbar.js";
+import OutsideNavbar from "../../components/auth/navbar/OutsideNavbar.jsx";
 
 // Bunch of pictures
 import Pricing from "../../assets/pricing.PNG";

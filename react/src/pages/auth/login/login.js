@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Login from "../../components/createAccount/login.component";
+// import Login from "../../../components/createAccount/login.component";
 import "./login.css";
-import OutsideNavbar from "../../components/navbar/outsideNavbar.js";
-import Picture from "../../assets/loginPicture.png";
+import OutsideNavbar from "../../../components/auth/navbar/OutsideNavbar.jsx";
+import Picture from "../../../assets/loginPicture.png";
 import styled from "styled-components";
 
 class LoginPage extends Component {
@@ -14,7 +14,7 @@ class LoginPage extends Component {
           <Image>
             <img src={Picture} alt="Map"></img>
           </Image>
-          <Login />
+          {/*<Login />*/}
         </Container>
       </React.Fragment>
     );
