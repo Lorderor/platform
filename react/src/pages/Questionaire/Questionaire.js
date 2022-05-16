@@ -13,10 +13,10 @@ import socialInitiatives from "../../assets/Welfare.png";
 import settings from "../../assets/settings.png";
 import dashboard from "../../assets/dashboard.png";
 
-import Headerbar from "../..//components/headerbar/HeaderTaskbar.js";
-import Sidebar from "../..//components/sidebar/sidebar.component.js";
+import Headerbar from "../../components/headerbar/HeaderTaskbar.js";
+import Sidebar from "../../components/sidebar/sidebar.component.js";
 
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 let headerItems = {
   link: "/profile",
@@ -66,9 +66,9 @@ class Questionaire extends Component {
   }
 
   render() {
-    if (this.state.done) {
-      return <Redirect to="/dashboard" />;
-    }
+    // if (this.state.done) {
+    //   return <Redirect to="/dashboard" />;
+    // }
     return (
       <React.Fragment>
         <Sidebar books={navItems} />

@@ -1,38 +1,36 @@
-import CreateAccount from "../../../components/auth/createAccount/CreateAccountForm";
-import "./createAccount.css";
-import OutsideNavbar from "../../../components/auth/navbar/OutsideNavbar.jsx";
-import Picture from "../../../assets/createPicture.png";
-import styled from "styled-components";
+import CreateAccountForm from '../../../components/auth/createAccount/CreateAccountForm';
+import './createAccount.css';
+import OutsideNavbar from '../../../components/auth/navbar/OutsideNavbar.jsx';
+import Picture from '../../../assets/createPicture.png';
+import styled from 'styled-components';
 
-export default ()=>{
-
-    return (
-      <>
-        <OutsideNavbar />
-        <Container>
-          <PictureCreate>
-            <Image>
-              <img src={Picture} alt="Map"></img>
-            </Image>
-          </PictureCreate>
-          <ContainerCreateAccount>
-            <CreateAccount />
-          </ContainerCreateAccount>
-        </Container>
-      </>
-    );
-
-}
+const CreateAccount = () => {
+  return (
+    <>
+      <OutsideNavbar />
+      <Container>
+        <PictureCreate>
+          <Image>
+            <img src={Picture} alt="Map"></img>
+          </Image>
+        </PictureCreate>
+        <ContainerCreateAccount>
+          <CreateAccountForm />
+        </ContainerCreateAccount>
+      </Container>
+    </>
+  );
+};
 
 const PictureCreate = styled.div`
-  flex:1;
-    background-color: #FCFCFB;
+  flex: 1;
+  background-color: #fcfcfb;
 `;
 
 const ContainerCreateAccount = styled.div`
-  flex:1;
-   box-sizing: border-box;
-   padding: 0 1rem;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 1rem;
 `;
 
 const Container = styled.div`
@@ -51,3 +49,4 @@ const Image = styled.div`
   margin-bottom: 43rem;
   margin-left: 3rem;
 `;
+export default CreateAccount;

@@ -1,25 +1,23 @@
-import React, { Component } from "react";
-// import Login from "../../../components/createAccount/login.component";
+import Login from "../../../components/auth/createAccount/LoginForm";
 import "./login.css";
 import OutsideNavbar from "../../../components/auth/navbar/OutsideNavbar.jsx";
 import Picture from "../../../assets/loginPicture.png";
 import styled from "styled-components";
 
-class LoginPage extends Component {
-  render() {
+const LoginPage = ()=> {
     return (
-      <React.Fragment>
+      <>
         <OutsideNavbar />
         <Container>
           <Image>
             <img src={Picture} alt="Map"></img>
           </Image>
-          {/*<Login />*/}
+            <LoginContainer>          <Login />
+            </LoginContainer>
         </Container>
-      </React.Fragment>
+      </>
     );
-  }
-}
+};
 
 const Container = styled.div`
   background: #fcfcfb;
@@ -33,9 +31,11 @@ const Container = styled.div`
 `;
 
 const Image = styled.div`
-  height: 3.8rem;
-  margin-right: 20rem;
-  margin-bottom: 35rem;
+  flex: 1;
 `;
-
+const LoginContainer = styled.div`
+  padding: 2rem;
+  box-sizing: border-box;
+  flex: 1;
+`;
 export default LoginPage;

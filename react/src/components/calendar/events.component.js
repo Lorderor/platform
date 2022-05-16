@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React  from 'react'
 
 let vals;
 
@@ -82,16 +82,16 @@ const EventItem = ({ name, eventType, eventInfo, time }) => {
 	}
 }
 
-class Events extends Component {
+const Events = ()=> {
 
-	sortEvents() {
+	const sortEvents=()=> {
 		vals = vals.sort(compare);
-	}
+	};
 
-	buildEvents() {
+	const buildEvents = ()=> {
 		vals = JSON.parse(window.localStorage.getItem('events'));
 		if (vals) {
-			this.sortEvents();
+			sortEvents();
 			return (
 				vals.map((book) =>
 					<EventItem
@@ -114,15 +114,14 @@ class Events extends Component {
 
 	}
 
-	render() {
+
 		return (
-			<React.Fragment>
+
 				<div class="d-flex flex-column">
-					{this.buildEvents()}
+					{buildEvents()}
 				</div>
-			</React.Fragment>
+
 		)
-	}
 }
 
 export default Events

@@ -1,15 +1,13 @@
-import React, { Component } from "react";
 import styled from "styled-components";
-import backgroundHome from "../../assets/backgroundHome.svg";
-import macPicture2 from "../../assets/macPicture2.png";
-import whyUImpactify from "../../assets/whyUImpactify.svg";
-import whoWeServe from "../../assets/whoWeServe.svg";
-import testimonials from "../../assets/testimonials.svg";
+import backgroundHome from "../../../../assets/backgroundHome.svg";
+import macPicture2 from "../../../../assets/macPicture2.png";
+import whyUImpactify from "../../../../assets/whyUImpactify.svg";
+import whoWeServe from "../../../../assets/whoWeServe.svg";
+import testimonials from "../../../../assets/testimonials.svg";
 import "./home.css";
 import { Link } from "react-router-dom";
 
-class Home extends Component {
-  render() {
+const Home = ()=> {
     return (
       <Container>
 				<div class="row">
@@ -77,13 +75,8 @@ class Home extends Component {
         </Content>
       </Container>
     );
-  }
-}
 
-const TestimonialSection = styled.div`
-	
-	align: center;
-`;
+};
 
 const Container = styled.div`
   background: #fcfcfb;

@@ -1,11 +1,9 @@
 import HomePage from '../pages/auth/home/HomePage';
-import LoginPage from '../pages/auth/login/login';
+import LoginPage from '../pages/auth/login/Login';
 import CreateAccount from '../pages/auth/createAccount/CreateAccount';
-
-const HOME_URL = '/home';
-const LOGIN_URL = '/login';
-const CREATE_URL = '/create';
-
+import Questionaire from '../pages/Questionaire/Questionaire';
+import Dashboard from '../pages/dashboard/Dashboard';
+import {CREATE_URL,HOME_URL,LOGIN_URL,QUESTIONAIRE_URL,DASHBOARD_URL} from './url'
 
 const HOME_ROUTE = {
     path: HOME_URL,
@@ -22,4 +20,14 @@ const  CREATE_ROUTE = {
     Component: CreateAccount,
 };
 
-export const ROUTES = [LOGIN_ROUTE,HOME_ROUTE,CREATE_ROUTE];
+const  QUESTIONAIRE_ROUTE = {
+    path:  QUESTIONAIRE_URL,
+    Component: Questionaire,
+};
+
+const  DASHBOARD_ROUTE = {
+    path:  DASHBOARD_URL,
+    Component: Dashboard,
+};
+
+export const ROUTES = [LOGIN_ROUTE,HOME_ROUTE,CREATE_ROUTE,QUESTIONAIRE_ROUTE,DASHBOARD_ROUTE];

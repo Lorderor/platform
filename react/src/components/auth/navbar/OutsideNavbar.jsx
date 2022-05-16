@@ -3,30 +3,23 @@ import Logo from "../../../assets/uimpactify-logo.png";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 
-export default () => {
-
+const OutsiteNavbar = () => {
     return (
         <StyledNav>
             <LeftContainer>
                 <StyledLink to="/home">
-                    <img src={Logo} className="custom-logo"/>
+                    <img src={Logo} alt='logo' className="custom-logo"/>
                 </StyledLink>
                 <ContainerLink>
-
                     <StyledNavLink to="/about" className="nav-item nav-link custom-link">
                         О нас
                     </StyledNavLink>
-
-
                     <StyledNavLink to="/solutions" className="nav-item nav-link custom-link">
                         Решения
                     </StyledNavLink>
-
-
                     <StyledNavLink to="/faq" className="nav-item nav-link custom-link">
                         Цены
                     </StyledNavLink>
-
                 </ContainerLink>
             </LeftContainer>
             <RightContainer>
@@ -101,3 +94,4 @@ background-color: #a78ec3;
 margin-left: 2rem;
 }
 `;
+export default OutsiteNavbar

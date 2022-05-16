@@ -1,8 +1,8 @@
-import Home from "../../../components/home/home.js";
+import Home from "./content/Home.jsx";
 import styled from "styled-components";
 import OutsideNavbar from "../../../components/auth/navbar/OutsideNavbar.jsx";
 
-export default ()=> {
+const HomePage = ()=> {
 
     return (
       <Container>
@@ -20,3 +20,5 @@ const Container = styled.div`
   right: 0;
   left: 0;
 `;
+
+export default HomePage

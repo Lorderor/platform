@@ -13,7 +13,7 @@ const CustomTextField = ({
                              InputProps,
                              ...rest
                          }) => {
-    const { data, touched, valid, active, error, pristine, submitError } = meta;
+    const { data, touched, valid, active, error, submitError } = meta;
     const helperText = (active && data.warning) || (touched && error) || submitError;
     const isError = touched && !valid;
 
